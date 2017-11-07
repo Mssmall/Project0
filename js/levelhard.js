@@ -10,37 +10,37 @@ let playerTurn = true;
 
 const checkWin = function () {
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[0][1] && 'X' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[0][1] && 'O' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[1][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[1][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[1][0] && 'O' === gameBoard[1][1] && 'X' === gameBoard[1][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[2][0] && 'X' === gameBoard[2][1] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[2][0] && 'O' === gameBoard[2][1] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[1][0] && 'X' === gameBoard[2][0]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[1][0] && 'O' === gameBoard[2][0]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[0][1] && 'X' === gameBoard[1][1] && 'X' === gameBoard[2][1]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[0][1] && 'O' === gameBoard[1][1] && 'O' === gameBoard[2][1]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[0][2] && 'X' === gameBoard[1][2] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[0][2] && 'O' === gameBoard[1][2] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[1][1] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
   if ('X' === gameBoard[2][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.hardMessage').html("Congratulations player01")}; 
   if ('O' === gameBoard[2][0] && 'O' === gameBoard[1][1] && 'O' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.hardMessage').html("Congratulations player02")}; 
 };
 
 // const checkDuplicate = function (row, index) {                      
@@ -122,7 +122,4 @@ $(document).ready(function () {
   //   player02(r, i, this);
   // } );
   
-
-
-// $(this).attr('row')
 

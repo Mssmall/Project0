@@ -1,20 +1,64 @@
+body {
+  line-height: 100px;
+  text-align: center;
+  font-size: 65px;
+  margin: 0 auto;
+  font-family: 'Caveat', cursive;
+}
+
 .container {
     width: 587px;
     min-height: 458px;
     margin: 0 auto;
-    /*makes grid spin 
-    /*-webkit-animation:spin 2s linear 1;
-    -moz-animation:spin 4s linear 1;
-    animation:spin 4s linear 1;
+    /*makes grid spin */
+    /*-webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
   }
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }*/
+  } 
+}
+
+.hardLevel {
+    width: 587px;
+    min-height: 458px;
+    margin: 0 auto;
+    /*makes grid spin */
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
   }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  } 
+}
 
 .gameBoard {
   min-width: 400px;
   min-height: 337px;
+  position: relative;
+}
+
+.message {
+  height: 300px;
+  width: 400px;
+  font-size: 40px;
+  color: rgb(37, 152, 131);
+  text-align: center;
+  margin: 0 auto;djfkdjlfkjfjldkskfhello there how are you dont be sighing too much
+  /*font-family: 'Libre Barcode 39 Text', cursive;*/
+}
+
+.hardMessage {
+  height: 300px;
+  width: 400px;
+  font-size: 40px;
+  color: rgb(37, 152, 131);
+  text-align: center;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -99,9 +143,3 @@
   border-top: solid 8px #0d3182;
 }
 
-body {
-  line-height: 100px;
-  text-align: center;
-  font-size: 65px;
-  f
-}
