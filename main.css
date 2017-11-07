@@ -1,0 +1,107 @@
+.container {
+    width: 587px;
+    min-height: 458px;
+    margin: 0 auto;
+    /*makes grid spin 
+    /*-webkit-animation:spin 2s linear 1;
+    -moz-animation:spin 4s linear 1;
+    animation:spin 4s linear 1;
+  }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }*/
+  }
+
+.gameBoard {
+  min-width: 400px;
+  min-height: 337px;
+  position: relative;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+#squareOne {
+  position: absolute;
+  top: 11px;
+  left: 128px;
+  border-right: solid 8px #0d3182;
+  border-bottom: solid 8px #0d3182;
+}
+
+#squareTwo {
+  position: absolute;
+  top: 11px;
+  left: 228px;
+  border-left: solid 8px #0d3182;
+  border-right: solid 8px #0d3182;
+  border-bottom: solid 8px #0d3182;
+}
+
+#squareThree {
+  position: absolute;
+  top: 11px;
+  left: 336px;
+  border-left: solid 8px #0d3182;
+  border-bottom: solid 8px #0d3182;
+}
+
+#squareFour {
+  position: absolute;
+  top: 111px;
+  left: 128px;
+  border-top: solid 8px #0d3182;
+  border-right: solid 8px #0d3182;
+  border-bottom: solid 8px #0d3182;
+}
+
+#squareFive {
+  position: absolute;
+  top: 111px;
+  left: 228px;
+  border: solid 8px #0d3182;
+}
+
+#squareSix {
+  position: absolute;
+  top: 111px;
+  left: 336px;
+  border-top: solid 8px #0d3182;
+  border-left: solid 8px #0d3182;
+  border-bottom: solid 8px #0d3182;
+}
+
+#squareSeven {
+  position: absolute;
+  top: 219px;
+  left: 128px;;
+  border-top: solid 8px #0d3182;
+  border-right: solid 8px #0d3182;
+}
+
+#squareEight {
+  position: absolute;
+  top: 219px;
+  left: 228px;
+  border-left: solid 8px #0d3182;
+  border-top: solid 8px #0d3182;
+  border-right: solid 8px #0d3182;
+}
+
+#squareNine {
+  position: absolute;
+  top: 219px;
+  left: 336px;
+  border-left: solid 8px #0d3182;
+  border-top: solid 8px #0d3182;
+}
+
+body {
+  line-height: 100px;
+  text-align: center;
+  font-size: 65px;
+  f
+}
