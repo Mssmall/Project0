@@ -1,50 +1,50 @@
 
 let gameBoard = [
-  
+
   ['1', '2', '3'],
   ['4', '5', '6'],
   ['7', '8', '9']
 ];
-
+//hello
 let playerTurn = true;
 
 const checkWin = function () {
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[0][1] && 'X' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[0][1] && 'O' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[1][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[1][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[1][0] && 'O' === gameBoard[1][1] && 'X' === gameBoard[1][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[2][0] && 'X' === gameBoard[2][1] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[2][0] && 'O' === gameBoard[2][1] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[1][0] && 'X' === gameBoard[2][0]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[1][0] && 'O' === gameBoard[2][0]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[0][1] && 'X' === gameBoard[1][1] && 'X' === gameBoard[2][1]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[0][1] && 'O' === gameBoard[1][1] && 'O' === gameBoard[2][1]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[0][2] && 'X' === gameBoard[1][2] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[0][2] && 'O' === gameBoard[1][2] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[0][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[0][0] && 'O' === gameBoard[1][1] && 'O' === gameBoard[2][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
   if ('X' === gameBoard[2][0] && 'X' === gameBoard[1][1] && 'X' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player01")}; 
+    $('.message').html("Congratulations player01")};
   if ('O' === gameBoard[2][0] && 'O' === gameBoard[1][1] && 'O' === gameBoard[0][2]) {
-    $('.message').html("Congratulations player02")}; 
+    $('.message').html("Congratulations player02")};
 };
 
-// const checkDuplicate = function (row, index) {                      
-//   // console.log(row, index);        
+// const checkDuplicate = function (row, index) {
+//   // console.log(row, index);
 //   // console.log(gameBoard[row][index] === 'X');
 //   // console.log(gameBoard[row][index] === 'O');
 //   // console.log(gameBoard[row][index] === 'O');
@@ -60,13 +60,13 @@ let player01 = function (row, index, square) {
     //checks whether selected square is already taken by a marker
     if (gameBoard[row][index] === 'X' || gameBoard[row][index] === 'O') {
       alert('That square is already taken. Move on.')
-      return; 
+      return;
     };
-    //marker is assigned to gameBoard array dependent on row and index input 
+    //marker is assigned to gameBoard array dependent on row and index input
     gameBoard[row][index] = 'X';
     let markerOne = gameBoard[row][index];
     //marker is put on specific square dependent on row and index input
-    
+
     $(square).text(markerOne);
     // console.log( gameBoard[row][index] ); //later change to jquery, clicking
     playerTurn = false;
@@ -82,7 +82,7 @@ let player02 = function (row, index, square) {
   if (playerTurn === false) {
     if (gameBoard[row][index] === 'X' || gameBoard[row][index] === 'O') {
       alert('That square is already taken. Move on.')
-      return; 
+      return;
     };
     gameBoard[row][index] = 'O';
     let markerTwo = gameBoard[row][index];
@@ -111,7 +111,7 @@ $(document).ready(function () {
     } else {
       player02(r, i, this);
     };
-    
+
   });
   });
   // $('.square').on('click', function() {
@@ -121,8 +121,7 @@ $(document).ready(function () {
   //   // console.log( r, i );
   //   player02(r, i, this);
   // } );
-  
+
 
 
 // $(this).attr('row')
-
