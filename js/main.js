@@ -68,6 +68,7 @@ let player01 = function (row, index, square) {
     //marker is put on specific square dependent on row and index input
 
     $(square).text(markerOne);
+    $(square).css('background-color', '#e6f7ff')
     // console.log( gameBoard[row][index] ); //later change to jquery, clicking
     playerTurn = false;
     // console.log(playerTurn);
@@ -87,6 +88,7 @@ let player02 = function (row, index, square) {
     gameBoard[row][index] = 'O';
     let markerTwo = gameBoard[row][index];
     $(square).text(markerTwo);
+    $(square).css('background-color', '#b3ffb3')
     // console.log( gameBoard[row][index] );
     checkWin();
     playerTurn = true;
