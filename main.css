@@ -2,12 +2,17 @@ h1 {
   text-align: left;
   color: rgb(37, 152, 131);
   font-size: 100px;
+  /*margin: 0 auto;*/
+  top: 200px;
+  height: 0px;
+  width: 20px;
 }
 
 body {
   line-height: 100px;
   text-align: center;
   font-size: 65px;
+  top: 30px;
   /*margin: 0 auto;*/
   font-family: 'Caveat', cursive;
 }
@@ -20,30 +25,40 @@ body {
 }
 
 .gameBoard {
-  max-width: 400px;
-  max-height: 337px;
+  min-width: 400px;
+  min-height: 337px;
   position: relative;
   margin: 0 auto;
 }
 
 .message {
-  height: 200px;
+  height: 160px;
   width: 400px;
   font-size: 40px;
   color: rgb(37, 152, 131);
   text-align: center;
   margin: 0 auto;
+  position: absolute;
+  top: 340px;
+  left: 180px;
   /*djfkdjlfkjfjldkskfhello there how are you dont be sighing too much
   /*font-family: 'Libre Barcode 39 Text', cursive;*/
 }
 
 .hardMessage {
-  height: 300px;
+  height: 100px;
   width: 400px;
   font-size: 40px;
   color: rgb(37, 152, 131);
   text-align: center;
   margin: 0 auto;
+  position: relative;
+}
+
+aside {
+  /*top: -300px;*/
+  top: -50px;
+  right: 100px;
   position: relative;
 }
 
@@ -173,10 +188,7 @@ a.buttonReset {
   border-top: solid 8px #0d3182;
 }
 
-.hardLevel {
-    width: 587px;
-    min-height: 458px;
-    margin: 0 auto;
+.hardLevel .gameBoard {
     /*makes grid spin */
     -webkit-animation:spin 2s linear infinite;
     -moz-animation:spin 4s linear infinite;
