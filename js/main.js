@@ -43,16 +43,6 @@ const checkWin = function () {
     $('.message').html("Congratulations player02")};
 };
 
-// const checkDuplicate = function (row, index) {
-//   // console.log(row, index);
-//   // console.log(gameBoard[row][index] === 'X');
-//   // console.log(gameBoard[row][index] === 'O');
-//   // console.log(gameBoard[row][index] === 'O');
-//   if (gameBoard[row][index] === 'X' || gameBoard[row][index] === 'O') {
-//     alert('That square is already taken')
-//   };
-// };
-
 let player01 = function (row, index, square) {
   // console.log(playerTurn);
   if (playerTurn === true) {
@@ -102,16 +92,16 @@ $(document).ready(function () {
   $('.square').on('click', function() {
     //to find the row and index that user has clicked on.
     const previousSquares = $(this).prevAll().length;
-    const r = Math.floor( previousSquares / 3 );
-    const i = previousSquares % 3;
+    const row = Math.floor( previousSquares / 3 );
+    const index = previousSquares % 3;
     // console.log(previousSquares);
     // console.log( r, i );
     // debugger;
     // console.log(playerTurn);
     if (playerTurn === true) {
-      player01(r, i, this);
+      player01(row, index, this);
     } else {
-      player02(r, i, this);
+      player02(row, index, this);
     };
 
   });
@@ -125,5 +115,12 @@ $(document).ready(function () {
   // } );
 
 
-
-// $(this).attr('row')
+  // const checkDuplicate = function (row, index) {
+  //   // console.log(row, index);
+  //   // console.log(gameBoard[row][index] === 'X');
+  //   // console.log(gameBoard[row][index] === 'O');
+  //   // console.log(gameBoard[row][index] === 'O');
+  //   if (gameBoard[row][index] === 'X' || gameBoard[row][index] === 'O') {
+  //     alert('That square is already taken')
+  //   };
+  // };

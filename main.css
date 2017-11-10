@@ -1,5 +1,5 @@
 h1 {
-  text-align: left;
+  text-align: center;
   color: rgb(37, 152, 131);
   font-size: 100px;
   /*margin: 0 auto;*/
@@ -40,8 +40,7 @@ body {
   margin: 0 auto;
   position: absolute;
   top: 340px;
-  left: 180px;
-  /*djfkdjlfkjfjldkskfhello there how are you dont be sighing too much
+  left: 85px;
   /*font-family: 'Libre Barcode 39 Text', cursive;*/
 }
 
@@ -74,7 +73,9 @@ a.buttonEasy {
     line-height: 30px;
     margin: 0 auto;
     text-align: center;
-    background-color: #e6f7ff;
+    background-color: none;
+    position: relative;
+    left: 100px;
 }
 
 a.buttonHard {
@@ -90,6 +91,8 @@ a.buttonHard {
     margin: 0 auto;
     text-align: center;
     background-color: #e6f7ff;
+    position: relative;
+    left: 100px;
 }
 
 a.buttonReset {
@@ -105,6 +108,8 @@ a.buttonReset {
     margin: 0 auto;
     text-align: center;
     background-color: #e6f7ff;
+    position: relative;
+    left: 100px;
 }
 
 .square {
